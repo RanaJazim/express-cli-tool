@@ -1,12 +1,6 @@
 const path = require("path");
 const fse = require("fs-extra");
 
-// function copyDir() {
-//   const srcDir = path.resolve(__dirname);
-
-//   console.log(srcDir);
-// }
-
 function copyDir(destDir) {
   const srcDir = path.resolve(__dirname, "../app-code");
 
