@@ -1,26 +1,18 @@
 const inquirer = require("inquirer");
-const fs = require("fs");
 const fse = require("fs-extra");
 const path = require("path");
+
+const { createDirIfNotExistsAndGetPath } = require("./utils/create-dir");
 
 inquirer
   .prompt([
     { name: "projectName", message: "Your project name:", type: "input" },
   ])
   .then((answers) => {
-    const dirPath = process.cwd() + "/" + answers.projectName;
-    createDirIfNotExists(dirPath);
+    const dirPath = createDirIfNotExistsAndGetPath(answers.projectName);
 
     copy(dirPath);
-
-    console.log(answers);
   });
-
-function createDirIfNotExists(dirName) {
-  if (!fs.existsSync(dirName)) {
-    fs.mkdirSync(dirName, { recursive: true });
-  }
-}
 
 function copy(destDir) {
   const srcDir = path.resolve(__dirname, "./app-code");
