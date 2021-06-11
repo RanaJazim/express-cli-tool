@@ -1,0 +1,8 @@
+{
+  "db": {
+    "connString": "mongodb://localhost:27017/your-db-name"
+  },
+  "jwt": {
+    "secret": "mykey"
+  }
+}

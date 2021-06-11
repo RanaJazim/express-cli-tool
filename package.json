@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
     "fs-extra": "^10.0.0",
-    "inquirer": "^8.1.0"
+    "inquirer": "^8.1.0",
+    "jsonwebtoken": "^8.5.1"
   }
 }
