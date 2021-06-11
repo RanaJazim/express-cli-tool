@@ -47,8 +47,8 @@ const User = mongoose.model("User", userSchema);
 module.exports = User;
 
 function excludePasswordField(userModel) {
-  let userFields = userModel._doc;
-  const { password, userFields } = userFields;
+  const userFields = userModel._doc;
+  const { password, _userFields } = userFields;
 
-  return userFields;
+  return _userFields;
 }
