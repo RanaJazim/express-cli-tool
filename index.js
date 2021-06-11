@@ -8,20 +8,8 @@ inquirer
     { name: "projectName", message: "Your project name:", type: "input" },
   ])
   .then((answers) => {
-    // const content = "Content";
-
-    const dirPath = process.cwd() + "/sample/hello";
+    const dirPath = process.cwd() + "/" + answers.projectName;
     createDirIfNotExists(dirPath);
-    // const filePath = dirPath + "/first.txt";
-
-    // fs.appendFile(filePath, content, (err, res) => {
-    //   if (err) {
-    //     console.log(err);
-    //     return;
-    //   }
-
-    //   console.log(res);
-    // });
 
     copy(dirPath);
 
@@ -35,7 +23,6 @@ function createDirIfNotExists(dirName) {
 }
 
 function copy(destDir) {
-  //   const srcDir = "app-code";
   const srcDir = path.resolve(__dirname, "./app-code");
 
   fse.copySync(srcDir, destDir, { overwrite: true }, (err) => {
