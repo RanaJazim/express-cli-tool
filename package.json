@@ -1,8 +1,9 @@
 {
   "name": "cli-for-express-scaffolding",
   "version": "1.0.0",
-  "description": "",
+  "description": "Basic Express Scaffolding. ",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "start": "node index.js"
   },
@@ -10,10 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "config": "^3.3.6",
     "fs-extra": "^10.0.0",
-    "inquirer": "^8.1.0",
-    "jsonwebtoken": "^8.5.1"
+    "inquirer": "^8.1.0"
   }
 }

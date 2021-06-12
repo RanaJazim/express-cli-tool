@@ -8,6 +8,11 @@ inquirer
     { name: "projectName", message: "Your project name:", type: "input" },
   ])
   .then((answers) => {
+    console.log("Please wait ......");
+
     const dirPath = createDirIfNotExistsAndGetPath(answers.projectName);
     copyDir(dirPath);
+  })
+  .catch((err) => {
+    console.log("Error while scaffolding express app", err);
   });
