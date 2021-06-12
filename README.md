@@ -1,5 +1,15 @@
 # Express Scaffolding Cli
 
+## How to install this ?
+
+- npm i express-scaffolding-cli
+- you can also install globally by typing this command i.e. npm i -g express-scaffolding-cli
+
+## How to run this ?
+
+- I'll prefer install this package globally and then simply type this command i.e. express-scaffolding-cli
+- You can also use npx this is your choice.
+
 ## How to use this ?
 
 - This is a very simple cli. First it will ask you a project name that you want to create.
