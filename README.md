@@ -15,3 +15,9 @@
 - This is a very simple cli. First it will ask you a project name that you want to create.
 - If you are already in the folder that you want to scaffold then simply add . which means scaffolding in the current folder.
 - But if you want to create folder and then scaffold in that folder then you'll have to pass the folder name just a regular string this cli will automatically create a folder for you and all that scaffolding stuff. Happy Coding 😊❤️ .
+
+## After Scaffolding Project
+- Navigate to your project and then install all packages by typing this command i.e. npm install or npm i
+- Go to default.json file in the config folder in the root of the project, add your database name in "connString" 
+- You can also change jwt secret key present in default.json file in the config folder. By the way this is just for development purposes but in production your "connString" and "secret" should not expose. And this is very simple fix. Simple create custom-environment-variables.json file and put on that. For more info checkout this [config docs](https://github.com/lorenwest/node-config) ...
+- for development: run this command npm run dev. It will start the development server which uses nodemon for file changes .
