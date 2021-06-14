@@ -1,6 +1,6 @@
 {
   "name": "express-scaffolding-cli",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Basic Express Scaffolding. ",
   "main": "index.js",
   "bin": "index.js",
@@ -20,5 +20,12 @@
   "dependencies": {
     "fs-extra": "^10.0.0",
     "inquirer": "^8.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RanaJazim/express-cli-tool"
+  },
+  "bugs": {
+    "url": "https://github.com/RanaJazim/express-cli-tool/issues"
   }
 }
